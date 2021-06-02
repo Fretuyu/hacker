@@ -1,0 +1,407 @@
+<html>
+<head>
+<link rel="shortcut icon" href="https://orig00.deviantart.net/b48a/f/2016/315/b/a/phantomghost_anon_logo_by_4prili666h05t-dao3ue7.png" />
+<meta property="og:title" content="Hacked by Z3U54774CK || PhantomGhost"/>
+<meta property="og:description" content="Hacked by Z3U54774CK || PhantomGhost"/> 
+<meta property="og:image:width" content=" ">
+<meta property="og:image:height" content=" ">
+<meta property="og:image" content="http://img14.deviantart.net/a815/i/2017/084/8/e/new_logo_by_4prili666h05t-db3k0s2.jpg">
+</head>
+<script language="JavaScript">
+	
+	
+	
+	function tb5_makeArray(n){
+	
+	
+	
+	this.length = n;
+	
+	
+	
+	return this.length;
+	
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	tb5_messages = new tb5_makeArray(3);
+	
+	
+	
+	tb5_messages[0] = "Hacked by";
+	
+	
+	
+	tb5_messages[1] = "PhantomGhost";
+	
+	
+	
+
+	tb5_rptType = 'infinite';
+	
+	
+	
+	tb5_rptNbr = 90;
+	
+	
+	
+	tb5_speed = 1;
+	
+	
+	
+	tb5_delay = 2500;
+	
+	
+	
+	var tb5_counter=2;
+	
+	
+	
+	var tb5_currMsg=0;
+	
+	
+	
+	var tb5_stsmsg="0";
+	
+	
+	
+	function tb5_shuffle(arr){
+	
+	
+	
+	var k;
+	
+	
+	
+	for (i=0; i<arr.length; i++){
+	
+	
+	
+	k = Math.round(Math.random() * (arr.length - i - 1)) + i;
+	
+	
+	
+	temp = arr[i];arr[i]=arr[k];arr[k]=temp;
+	
+	
+	
+	}
+	
+	
+	
+	return arr;
+	
+	
+	
+	}
+	
+	
+	
+	tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+	
+	
+	
+	tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+	
+	
+	
+	for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+	
+	
+	
+	tb5_arr[i] = i;
+	
+	
+	
+	tb5_sts[i] = "_";
+	
+	
+	
+	}
+	
+	
+	
+	tb5_arr = tb5_shuffle(tb5_arr);
+	
+	
+	
+	function tb5_init(n){
+	
+	
+	
+	var k;
+	
+	
+	
+	if (n == tb5_arr.length){
+	
+	
+	
+	if (tb5_currMsg == tb5_messages.length-1){
+	
+	
+	
+	if ((tb5_rptType == 'finite') && (tb5_counter==tb5_rptNbr)){
+	
+	
+	
+	clearTimeout(tb5_timerID);
+	
+	
+	
+	return;
+	
+	
+	
+	}
+	
+	
+	
+	tb5_counter++;
+	
+	
+	
+	tb5_currMsg=0;
+	
+	
+	
+	}
+	
+	
+	
+	else{
+	
+	
+	
+	tb5_currMsg++;
+	
+	
+	
+	}
+	
+	
+	
+	n=0;
+	
+	
+	
+	tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+	
+	
+	
+	tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+	
+	
+	
+	for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+	
+	
+	
+	tb5_arr[i] = i;
+	
+	
+	
+	tb5_sts[i] = "_";
+	
+	
+	
+	}
+	
+	
+	
+	tb5_arr = tb5_shuffle(tb5_arr);
+	
+	
+	
+	tb5_sp=tb5_delay;
+	
+	
+	
+	}
+	
+	
+	
+	else{
+	
+	
+	
+	tb5_sp=tb5_speed;
+	
+	
+	
+	k = tb5_arr[n];
+	
+	
+	
+	tb5_sts[k] = tb5_messages[tb5_currMsg].charAt(k);
+	
+	
+	
+	tb5_stsmsg = "";
+	
+	
+	
+	for (var i=0; i<tb5_sts.length; i++)
+	
+	
+	
+	tb5_stsmsg += tb5_sts[i];
+	
+	
+	
+	document.title = tb5_stsmsg;
+	
+	
+	
+	n++;
+	
+	
+	
+	}
+	
+	
+	
+	tb5_timerID = setTimeout("tb5_init("+n+")", tb5_sp);
+	
+	
+	
+	}
+	
+	
+	
+	function tb5_randomizetitle(){
+	
+	
+	
+	tb5_init(0);
+	
+	
+	
+	}
+	
+	
+	
+	tb5_randomizetitle();
+	
+	
+	
+	</script>
+
+
+<script type="text/javascript">
+
+var snowmax=35
+var snowcolor=new Array("#AAAACC","#DDDDFF","#CCCCDD","#F3F3F3","#F0FFFF")
+var snowtype=new Array("Arial Black","Arial Narrow","Times","Comic Sans MS")
+var snowletter="*"
+var sinkspeed=0.6
+var snowmaxsize=22
+var snowminsize=8
+var snowingzone=1
+
+// Do not edit below this line
+var snow=new Array()
+var marginbottom
+var marginright
+var timer
+var i_snow=0
+var x_mv=new Array();
+var crds=new Array();
+var lftrght=new Array();
+var browserinfos=navigator.userAgent 
+var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
+var ns6=document.getElementById&&!document.all
+var opera=browserinfos.match(/Opera/)  
+var browserok=ie5||ns6||opera
+
+function randommaker(range) {
+rand=Math.floor(range*Math.random())
+    return rand
+}
+
+function initsnow() {
+if (ie5 || opera) {
+marginbottom = document.body.clientHeight
+marginright = document.body.clientWidth
+}
+else if (ns6) {
+marginbottom = window.innerHeight
+marginright = window.innerWidth
+}
+var snowsizerange=snowmaxsize-snowminsize
+for (i=0;i<=snowmax;i++) {
+crds[i] = 0;                      
+    lftrght[i] = Math.random()*15;         
+    x_mv[i] = 0.03 + Math.random()/10;
+snow[i]=document.getElementById("s"+i)
+snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
+snow[i].size=randommaker(snowsizerange)+snowminsize
+snow[i].style.fontSize=snow[i].size
+snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
+snow[i].sink=sinkspeed*snow[i].size/5
+if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
+snow[i].style.left=snow[i].posx
+snow[i].style.top=snow[i].posy
+}
+movesnow()
+}
+
+function movesnow() {
+for (i=0;i<=snowmax;i++) {
+crds[i] += x_mv[i];
+snow[i].posy+=snow[i].sink
+snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]);
+snow[i].style.top=snow[i].posy
+
+if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
+if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+snow[i].posy=0
+}
+}
+var timer=setTimeout("movesnow()",50)
+}
+
+for (i=0;i<=snowmax;i++) {
+document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+}
+if (browserok) {
+window.onload=initsnow
+}
+</script>
+
+<body bgcolor="#0d0d0b">
+<body oncontextmenu="return false;" onkeydown="return false;"
+onmousedown="return false;"
+<table width=100% height=100%>
+<td align=center>
+<span style='font: 20px tahoma;size:20px;color:white;text-shadow: 0px 0px 0px;'>
+<center>
+<img src="http://img01.deviantart.net/23fb/i/2017/082/e/c/new_logo_white_by_4prili666h05t-db3965p.png" width="50%"><p>
+<center>
+Ghost on cyber space<p>
+<font style="font-size:20px" color="red" face="Trebuchet MS"><b>Hacked by Z3U54774CK || PhantomGhost<p>
+<p>
+<center><font style="font-size:15px" color="#cbccc7" face="Trebuchet MS"><b> //~We Are~//<br>
+./4prili666h05T - Mr.3RR0R - Mr.Aljabar - Exect1337 - Z3U54774CK - N1C3x13 - 6hosthere502 - D34D 5L00P - IF22
+- 213_90N6 - Netr4LizeR
+<br><br>//~Gr33tz~//<br>
+Badc0de -  FrozenBear404 - Hmei7 - Kazuya404 - Monkey B Luffy - ZakirDotID - ./cOLI - Family Attack Cyber - Indonesian Code Party - IndoXploit - OwlSquad
+<p>
+<p>
+<audio autoplay="autoplay" controls="controls" width="250px" height="100px"><source src="https://k.top4top.io/m_1952r8jix0.mp3" type="audio/mpeg"></audio>
+
+</html>
