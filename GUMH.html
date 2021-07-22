@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>.::Hacked By GUMH::.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Lobster&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Patrick+Hand+SC&family=Walter+Turncoat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background: #000;
+            }
+            section {
+                position: relative;
+                justify-content: center;
+                align-items: center;
+            }
+            section .text {
+                position: absolute;
+                color: #fff;
+                font-size: 18px;
+                user-select: none;
+                pointer-events: none;
+                animation: animate 7.5s linear infinite;
+            }
+            @keyframes animate {
+                0% {
+                    color: blue;
+                    transform: rotate(360deg);
+                }
+                100% {
+                    color: blue;
+                    transform: rotate(0deg);
+                }
+            }
+            section .text span {
+                top: -100px;
+                position: absolute;
+                text-transform: uppercase;
+                display: inline-block;
+                transform-origin: 0 100px;
+            }
+            .logo {
+                width: 300px;
+                height: 370px;
+                animation: logo 7.5s linear infinite;
+            }
+           /* @keyframes logo {
+                0% {
+                    transform: rotate(360deg);
+                }
+                100% {
+                    transform: rotate(0deg);
+                }
+            }*/
+            .p1 {
+                letter-spacing: 3px;
+                font-size: 18pxs;
+                border-bottom: 1px solid cyan;
+                display: inline-block;
+            }
+            .p2 {
+                margin-top: 0px;
+                letter-spacing: 3px;
+                font-size: 18px;
+                color: darkgreen;
+            }
+            .text{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            .marq{
+                margin-top: 30px;
+                width: fit-content;
+                font-size: 16px;
+                border-bottom: 1px solid red;
+                border-top: .5px solid red;
+                display: block;
+            }
+            h2 {
+                color: #fff;
+                font-size: 30px;
+                letter-spacing: 0.5em;
+                font-family: 'IM Fell French Canon SC', serif;
+                animation-name: color;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                text-shadow:1px 0px 0px #ff33,
+                            0px 0px 2px #fff;
+            }
+            @keyframes color {
+                0% {color: white;}
+                25% {color: green;}
+                50% {color: yellow;}
+                75% {color: brown;}
+                100% {color: blue;}
+            }
+            h1 {
+                /*font-family: 'Lobster', cursive;*/
+                /*font-family: 'Press Start 2P', cursive;*/
+                font-family: 'IM Fell French Canon SC', serif;
+                font-size:2.5em; 
+                text-shadow: 2px 0px 0px red,
+                            0px 0px 5px orangered,
+                            1px 0px 3px orange,
+                            2px 0px 5px yellow;
+
+                letter-spacing: 4px;
+                animation: .8s shake infinite alternate;
+            }
+            @keyframes shake {
+                0% {
+                    transform: skewX(-35deg);
+                }
+                5% {
+                    transform: skewX(35deg);
+                }
+                10% {
+                    transform: skewX(-35deg);
+                }
+                15% {
+                    transform: skewX(35deg);
+                }
+                20% {
+                    transform: skewX(0deg);
+                }
+                100% {
+                    transform: skewX(0deg);
+                }
+            }
+            @media screen and (max-width: 768px) {
+                .p1 {
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                }
+                h2 {
+                    font-size: 24px;
+                    letter-spacing: 5px;
+                    
+                }
+                h1 {
+                    font-size: 2em;
+                }
+                .logo {
+                    margin-top: 60px;
+                    width: 200px;
+                    height: 270px;
+                }
+            }
+        </style>
+        <div class="main">
+            <section>
+                <h2 class="text">we-are-gray-hackers-</h2>
+            </section>
+            <center>
+            <img class="logo" src="https://webserverchl.000webhostapp.com/logo.png" alt="gumh_logo">
+            <h1><font color="white">HAC</font><font color="green">KED BY</font> <font color="yellow">GUMH</font></h1><br>
+            <h2>NO SYSTEM IS SAFE!!</h2><br>
+            <p class="p1"><font color="red">|| Z34oNiGh5 || </font><font color="blue">D3V!l_XIII || </font><font color="yellow">Yhk4un9l4y || </font><font color="green">Mr.C45P3R ||</font></p>
+            </center>
+            <br>
+            <div class="marq">
+                <marquee><p class="p2">Greetz to::all underground hackers in world!@!</p></marquee>
+            </div>
+        </div>
+        <script>
+            const text = document.querySelector('.text');
+            text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>");
+
+            const element = document.querySelectorAll('span');
+            for(let i = 0; i<element.length; i++) {
+                element[i].style.transform = "rotate("+i*18+"deg)"
+            }
+        </script>
+        <audio autoplay="true" loop="true" src="https://webserverchl.000webhostapp.com/song.mp3">
+            <!--<audio src="DAN DAN Kokoro Hikareteku  Dragon Ball GT OP -- Cover by V0RA_256k.mp3" autoplay="true" loop="true"></audio>-->
+    </body>
+</html>
+
