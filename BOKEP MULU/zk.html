@@ -1,0 +1,384 @@
+<html 
+xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>HACKED BY DEMON ZAYN X KENZI PXT</title> 
+  <script>
+  var name = prompt(" Halo Min,Boleh Kenalan? Nama Kamu?","");
+
+   alert("Salam Kenal Yah "+name)
+
+  alert("DONE ^_^ ");
+  </script> 
+  <link href="https://fonts.googleapis.com/css?family=&amp;display=swap" type="text/css" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Audiowide&amp;display=swap" type="text/css" rel="stylesheet"> 
+  <link rel="icon" href="https://g.top4top.io/p_2029v1idr0.jpg" type="image/x-icon"> 
+  <link rel="icon" type="image/png" href="https://h.top4top.io/p_2061t3vfl0.jpg"> 
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta property="og:title" content="HACKED BY DEMON ZAYNXKENZI PXT"> 
+  <meta name="deion" content="[ Party In Your Site ]"> 
+  <meta property="og:description" content="Semoga Bahagia Dengan Yg Baru (˘･_･˘)"> 
+  <meta property="og:url" content="HACKED BY DRAK404"> 
+  <meta property="og:site_name" content="[!] HACKED BY DEMON ZAYN X KENZI PXT[!]"> 
+  <meta property="og:image" content="https://k.top4top.io/p_2058vo9n90.jpg"> 
+  <meta property="og:type" content="website"> 
+  <meta name="copyright" content="DRAK_2020"> 
+  <meta name="theme-color" content="black"> 
+  <meta name="keywords" content="KONTOL ^//^"> 
+  <meta content="HACKED BY DEMON ZAYN X KENZI PXT" property="og:title"> 
+  <meta content="article" property="og:type"> 
+ </head> 
+ <body oncontextmenu="return false" onkeydown="return false" onmousedown="return false" bgcolor="black" background="https://e.top4top.io/p_2058wzs1t0.jpg" height="4000" width="4000" position="center"> 
+  <script type="text/javascript">
+
+var snowmax=35
+
+var snowcolor=new Array("#AAAACC","#DDDDFF","#CCCCDD","#F3F3F3","#F0FFFF")
+
+var snowtype=new Array("Arial Black","Arial Narrow","Times","Comic Sans MS")
+
+var snowletter="*"
+
+var sinkspeed=0.6
+
+var snowmaxsize=22
+
+var snowminsize=8
+
+var snowingzone=1
+
+// Do not edit below this line
+
+var snow=new Array()
+
+var marginbottom
+
+var marginright
+
+var timer
+
+var i_snow=0
+
+var x_mv=new Array();
+
+var crds=new Array();
+
+var lftrght=new Array();
+
+var browserinfos=navigator.userAgent 
+
+var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
+
+var ns6=document.getElementById&&!document.all
+
+var opera=browserinfos.match(/Opera/)  
+
+var browserok=ie5||ns6||opera
+
+function randommaker(range) {		
+
+	rand=Math.floor(range*Math.random())
+
+    return rand
+
+}
+
+function initsnow() {
+
+	if (ie5 || opera) {
+
+		marginbottom = document.body.clientHeight
+
+		marginright = document.body.clientWidth
+
+	}
+
+	else if (ns6) {
+
+		marginbottom = window.innerHeight
+
+		marginright = window.innerWidth
+
+	}
+
+	var snowsizerange=snowmaxsize-snowminsize
+
+	for (i=0;i<=snowmax;i  ) {
+
+		crds[i] = 0;                      
+
+    	lftrght[i] = Math.random()*15;         
+
+    	x_mv[i] = 0.03   Math.random()/10;
+
+		snow[i]=document.getElementById("s" i)
+
+		snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
+
+		snow[i].size=randommaker(snowsizerange) snowminsize
+
+		snow[i].style.fontSize=snow[i].size
+
+		snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
+
+		snow[i].sink=sinkspeed*snow[i].size/5
+
+		if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+
+		if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+
+		if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size) marginright/4}
+
+		if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size) marginright/2}
+
+		snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
+
+		snow[i].style.left=snow[i].posx
+
+		snow[i].style.top=snow[i].posy
+
+	}
+
+	movesnow()
+
+}
+
+function movesnow() {
+
+	for (i=0;i<=snowmax;i  ) {
+
+		crds[i]  = x_mv[i];
+
+		snow[i].posy =snow[i].sink
+
+		snow[i].style.left=snow[i].posx lftrght[i]*Math.sin(crds[i]);
+
+		snow[i].style.top=snow[i].posy
+
+		if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
+
+			if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+
+			if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+
+			if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size) marginright/4}
+
+			if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size) marginright/2}
+
+			snow[i].posy=0
+
+		}
+
+	}
+
+	var timer=setTimeout("movesnow()",50)
+
+}
+
+for (i=0;i<=snowmax;i  ) {
+
+	document.write("<span id='s" i "' style='position:absolute;top:-" snowmaxsize "'>" snowletter "</span>")
+
+}
+
+if (browserok) {
+
+	window.onload=initsnow
+
+}
+
+</script> 
+  <style type="text/css">.lagu{background:transparent;border:1px solid red;font-family:Share\ Tech\ Mono;color:;font-size:10px;font-weight:normal;padding:2px 25px;text-decoration:none;text-shadow:0 0 0px #15cff4}</style> 
+  <script>
+
+    function play(){var audio=document.getElementById('lagu');audio.play();}function liat(){document.getElementById('galiat').style.visibility='visible';}</script> 
+  <style>img[alt="www.000webhost.com"]{display:none;}</style> 
+  <style type="text/css">
+
+HTML,BODY{cursor: none;}
+
+</style> 
+  <center> 
+   <center> 
+    <style>
+
+    h1 {
+
+    text-align: center;
+
+    color: #3335cf;
+
+    font-size: 35px;
+
+    font-family: Arial Narrow, sans-serif;
+
+    font-style: garamond;
+
+    text-shadow: 100vmax #f00505;>
+
+    text-shadow: 0px 0px 0px #f00505;>
+
+    </style> 
+    <center> 
+     <br> 
+    </center> 
+    <center> 
+     <font color="red" size="4" face="audiowide">HACKED BY DEMON <font color="white">ZAYNxKENZI pxt</font></font> 
+    </center> 
+    <font color="red" size="4" face="audiowide"> <br> </font> 
+    <center> 
+     <font color="red" size="4" face="audiowide"> <font color="white" size="3" face="courier New">[!]MASSAGE[!]<br><br> <br>Akan ada waktu ketika orang yang sabar menjadi muak, orang yang peduli menjadi masa bodoh<br>orang yang setia menjadi angkat kaki. Itu adalah ketika sifat sabar, peduli, dan setianya tidak dihargai</font> <br><br> <br><br> <script type="text/javascript">
+var isCtrl = false;
+ face="audiowide"> <script> 
+farbbibliothek = new Array(); 
+farbbibliothek[0] = new 
+{ 
+for(var i=0 ; i<Buchstabe.length; i++) 
+{ 
+document.all["a"+i].style.color=farben[i]; 
+} 
+farbverlauf(); 
+} 
+function string2array(text) 
+{ 
+Buchstabe = new Array(); 
+while(farben.length<text.length) 
+{ 
+farben = farben.concat(farben); 
+} 
+k=0; 
+while(k<=text.length) 
+{ 
+Buchstabe[k] = text.charAt(k); 
+k++; 
+} 
+} 
+function divserzeugen() 
+{ 
+for(var i=0 ; i<Buchstabe.length; i++) 
+{ 
+document.write("<font face='monotype corsiva' size=30><span id='a"+i+"' class='a"+i+"'>"+Buchstabe[i] + "</span></font>"); 
+} 
+farbschrift(); 
+} 
+var a=1; 
+function farbverlauf() 
+{ 
+for(var i=0 ; i<farben.length; i++) 
+{ 
+farben[i-1]=farben[i]; 
+} 
+farben[farben.length-1]=farben[-1]; 
+ 
+setTimeout("farbschrift()",30); 
+} 
+var farbsatz=1; 
+function farbtauscher() 
+{ 
+farben = farbbibliothek[farbsatz]; 
+while(farben.length<text.length) 
+{ 
+farben = farben.concat(farben); 
+} 
+farbsatz=Math.floor(Math.random()*(farbbibliothek.length-0.0001)); 
+} 
+setInterval("farbtauscher()",5000); 
+text= "TN DRAK404";
+</script><span class="newclass"> <script type="text/javascript">
+string2array(text); 
+divserzeugen();
+</script><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a10" class="a10" style="color: rgb(85, 0, 0);"></span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a5" class="a5" style="color:>A</span></font><font face=" monotype="" corsiva"="" size="30"></span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a10" class="a10" style="color: rgb(85, 0, 0);"></span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a5" class="a5" style="color:>A</span></font><font face=" monotype="" corsiva"="" size="30"></span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a10" class="a10" style="color: rgb(85, 0, 0);"></span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a5" class="a5" style="color:>A</span></font><font face=" monotype="" corsiva"="" size="30"></span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a10" class="a10" style="color: rgb(85, 0, 0);"></span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a5" class="a5" style="color:>A</span></font><font face=" monotype="" corsiva"="" size="30"></span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a10" class="a10" style="color: rgb(85, 0, 0);"></span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a5" class="a5" style="color:>A</span></font><font face=" monotype="" corsiva"="" size="30"></span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a10" class="a10" style="color: rgb(85, 0, 0);"></span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a5" class="a5" style="color:>A</span></font><font face=" monotype="" corsiva"="" size="30"></span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a10" class="a10" style="color: rgb(85, 0, 0);"></span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a5" class="a5" style="color:>A</span></font><font face=" monotype="" corsiva"="" size="30"></span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a10" class="a10" style="color: rgb(85, 0, 0);"></span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a5" class="a5" style="color:>A</span></font><font face=" monotype="" corsiva"="" size="30"></span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a10" class="a10" style="color: rgb(85, 0, 0);"></span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a5" class="a5" style="color:>A</span></font><font face=" monotype="" corsiva"="" size="30"></span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a10" class="a10" style="color: rgb(85, 0, 0);"></span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a2" class="a2" style="color: rgb(170, 0, 0);"> </span></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"></font><font face="monotype corsiva" size="30"><span id="a10" class="a10" style="color: rgb(34, 0, 0);"></span></font></span> <p> </p></font> 
+     <center> 
+      <font color="red" size="4" face="audiowide"> </font> 
+      <p><font color="red" size="4" face="audiowide"> 
+        <marquee behavior="alternate" scrollamount="60" width="370"> 
+         <font size="4" color="red">____________________________________________________________________________<font size="5" color="yellow">_________________________________________________________________<font size="5" color="#1CFF00">__________________________________________________________________<font size="5" color="#00A7FF">_____________________________________________________</font></font></font></font> 
+        </marquee> 
+        <marquee behavior="scroll" direction="left" scrollamount="4" scrolldelay="55" width="100%"> 
+         <font face="courier new" size="2" color="red">[ <font face="courier new" size="2" color="white"> my team <font face="courier new" size="2" color="red">][ <font face="courier new" size="2" color="white">DEMON ZAYN <font face="courier new" size="2" color="red">][ <font face="courier new" size="2" color="white">PXT <font face="courier new" size="2" color="red">][ <font face="courier new" size="2" color="white"> GENEST SEVEN </font> </font></font></font></font></font></font></font> 
+        </marquee> <br><br> <button class="lagu" onclick="play();liat();"><font face="courier new" size="2" color="white">PLAY TO ENJOY MUSIC</font></button> 
+        <audio id="lagu" src="https://j.top4top.io/m_20299rsa50.mp3"></audio> <br><br> </font><br> 
+       <marquee behavior="alternate" scrollamount="5" style="border:1px solid;" width="75%"> 
+        <font face="courier New" color="white" font="" size="3">----------:[ THANK YOU SEMUA TEMAN - SEMUA TIM - SEMUA KELUARGA - DAN ANDA!! ]:----------</font> 
+       </marquee> </p> 
+      <p> <font face="courier new color=" #7b68ee"="" size"98"=""><font face="courier new" color="#7B68EE" size"18"=""> 
+         <marquee>
+           &lt;&lt;&lt;&lt; Bahagia Tidak Harus Dengan Cinta &gt;&gt;&gt; 
+         </marquee> </font></font></p> 
+      <font face="courier new color=" #7b68ee"="" size"98"=""><font face="courier new" color="#7B68EE" size"18"=""> </font> 
+       <center> 
+        <font face="courier new" color="#7B68EE" size"18"=""> </font> 
+        <b><font face="Courier new" size="2" color="#050000"> </font><br><br> <b><font face="Courier new" size="2" color="#050000"> </font> <i><b><a href="-"><font color="#00BFFF" size="1"></font></a></b> 
+           <marquee style="border:1px solid purple; border-radius:20px;"> 
+            <font face="monaco" size="4" font="" style="text-shadow: 0px 0px 30px purple;" color="white">|| PERGIH LAH KLO GK DIHARGAI SAMA PSNGN KLIAN |</font> 
+           </marquee> </i></b></b> 
+       </center><b><b><i> <font style="color:white;text-shadow:blue 0px 0px 10px" size="5"> &nbsp;&nbsp;&nbsp;&nbsp;<br> bahagia bisa tapi tidak harus dengan cinta <br></font> </i></b></b></font> 
+      <b><b><i> 
+         <center> 
+          <font face="courier new color=" #7b68ee"="" size"98"=""> <br> 
+           <center> 
+            <font color="white"> 
+             <div id="clock">
+              07:23:52 AM
+             </div> <script type="text/javascript">
+ function showTime() {
+ var a_p = "";
+ var today = new Date();
+ var curr_hour = today.getHours();
+ var curr_minute = today.getMinutes();
+ var curr_second = today.getSeconds();
+ if (curr_hour < 12) {
+ a_p = "AM";
+ } else {
+ a_p = "PM";
+ }
+ if (curr_hour == 0) {
+ curr_hour = 12;
+ }
+ if (curr_hour > 12) {
+ curr_hour = curr_hour - 12;
+ }
+ curr_hour = checkTime(curr_hour);
+ curr_minute = checkTime(curr_minute);
+ curr_second = checkTime(curr_second);
+ document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+ }
+ 
+ function checkTime(i) {
+ if (i < 10) {
+ i = "0" + i;
+ }
+ return i;
+ }
+ setInterval(showTime, 500);
+ 
+ </script> <script type="text/javascript">
+ 
+ var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+ var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+ var date = new Date();
+ var day = date.getDate();
+ var month = date.getMonth();
+ var thisDay = date.getDay(),
+ thisDay = myDays[thisDay];
+ var yy = date.getYear();
+ var year = (yy < 1000) ? yy + 1900 : yy;
+ document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+
+ </script>Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021Kamis, 25 November 2021 </font> 
+           </center> <br> </font> 
+          <center> 
+           <font face="courier new color=" #7b68ee"="" size"98"=""> </font> 
+           <center> 
+            <font face="courier new color=" #7b68ee"="" size"98"=""><font color="red" size="4"> see you </font><br><a href="https://www.instagram.com/bangkit_aldo"> </a> <a href="https://youtube.com/channel/UCxLzV192yPJDGMQFiw4umig"> </a> <br> <font size="5px" style="font-family: 'Jolly Lodger', cursive; color: white; text-decoration: bold; text-shadow: 0px 0px 5px cyan, 0px 0px 10px cyan, 0px 0px 30px cyan, 0px 0px 45px cyan, 0px 0px 60px cyan;" demon="" zayn<="" font=""> </font></font> 
+           </center> 
+           <font face="courier new color=" #7b68ee"="" size"98"=""> </font> 
+          </center> 
+         </center></i></b></b> 
+     </center> 
+    </center> 
+   </center> 
+  </center> 
+ </body>
+</html>
