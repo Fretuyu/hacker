@@ -1,0 +1,199 @@
+
+<!DOCTYPE html> 
+ <html> 
+ <head>
+<center><img src="https://imgyukle.com/f/2022/02/05/o60OSS.jpg" width="350" height="350"></center>
+ <meta charset="UTF-8"> 
+<title>Hacked By CYBER SOLDIERS TEAM</title> 
+ <style> 
+ /*basic reset*/ 
+ * {margin: 0; padding: 0;} 
+ /*adding a black bg to the body to make things clearer*/ 
+ body {background: black;} 
+ canvas { 
+     display: block; 
+     position: fixed; 
+ 	top: 0; 
+ 	left: 0; 
+     z-index: -1000; 
+ } 
+ #login { 
+     width: 400px; 
+     background-color: rgba(0,155,0,0.7); 
+     padding: 25px; 
+     margin: 15% auto; 
+     border-radius: 10px; 
+ } 
+ #login input { 
+     height: 40px; 
+     width: 375px; 
+     font-size: 18px; 
+     padding: 5px; 
+     margin-bottom: 15px; 
+     border-radius: 7px; 
+     background-color: rgba(255,255,255,0.5); 
+     border: none; 
+     color: #000; 
+ } 
+ #login button { 
+     width: 100px; 
+     font-size: 18px; 
+     display: block; 
+     margin: 0 auto; 
+     background-color: #009933; 
+     border: none; 
+     height: 40px; 
+ 	border-radius: 5px; 
+ } 
+ </style> 
+ </head> 
+  
+ <body> 
+
+  
+ <canvas id="c"></canvas> 
+  
+ <script> 
+ var c = document.getElementById("c"); 
+ var ctx = c.getContext("2d"); 
+  
+ //making the canvas full screen 
+ c.height = window.innerHeight; 
+ c.width = window.innerWidth; 
+  
+ //chinese characters - taken from the unicode charset 
+ var chinese = "01100100110"; 
+ //converting the string into an array of single characters 
+ chinese = chinese.split(""); 
+  
+ var font_size = 18; 
+ var columns = c.width/font_size; //number of columns for the rain 
+ //an array of drops - one per column 
+ var drops = []; 
+ //x below is the x coordinate 
+ //1 = y co-ordinate of the drop(same for every drop initially) 
+ for(var x = 0; x < columns; x++) 
+ 	drops[x] = 1;  
+  
+ //drawing the characters 
+ function draw() 
+ { 
+ 	//Black BG for the canvas 
+ 	//translucent BG to show trail 
+ 	ctx.fillStyle = "rgba(0, 0, 0, 0.05)"; 
+ 	ctx.fillRect(0, 0, c.width, c.height); 
+ 	 
+ 	ctx.fillStyle = "#0F0"; //green text 
+ 	ctx.font = font_size + "px arial"; 
+ 	//looping over drops 
+ 	for(var i = 0; i < drops.length; i++) 
+ 	{ 
+ 		//a random chinese character to print 
+ 		var text = chinese[Math.floor(Math.random()*chinese.length)]; 
+ 		//x = i*font_size, y = value of drops[i]*font_size 
+ 		ctx.fillText(text, i*font_size, drops[i]*font_size); 
+ 		 
+ 		//sending the drop back to the top randomly after it has crossed the screen 
+ 		//adding a randomness to the reset to make the drops scattered on the Y axis 
+ 		if(drops[i]*font_size > c.height && Math.random() > 0.975) 
+ 			drops[i] = 0; 
+ 		 
+ 		//incrementing Y coordinate 
+ 		drops[i]++; 
+ 	} 
+ } 
+  
+ setInterval(draw, 33); 
+ </script> 
+ </body> 
+ <html>
+<head>
+<meta charset="utf-8">
+</head>
+<body 
+
+style="background-color:black;">
+<center><p>
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="https://dosenpintar.com/wp-content/uploads/2021/12/download-mp3-lagu-indonesia-raya-1.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<div style="text-align: center;">
+<span style="color: red; font-family: Courier New, Courier, monospace; font-size: large;"><span style="line-height: 18px;"></span></span></div>
+<br />
+<div style="text-align: center;">
+<span style="font-size: large;"><b><script>
+var text="CYBER SOLDIERS TEAM INDONESIE..!"
+var speed=24 // SPEED OF FADE
+if (document.all||document.getElementById){
+document.write('<span id="highlight">' + text + '</span>')
+var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+}
+else
+document.write(text)
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+var r=1
+var g=1
+var b=1
+var seq=1
+function changetext(){
+rainbow="#"+hex[r]+hex[g]+hex[b]
+storetext.style.color=rainbow
+}
+function change(){
+if (seq==6){
+b--
+if (b==0)
+seq=1
+}
+if (seq==5){
+r++
+if (r==12)
+seq=6
+}
+if (seq==4){
+g--
+if (g==0)
+seq=5
+}
+if (seq==3){
+b++
+if (b==12)
+seq=4
+}
+if (seq==2){
+r--
+if (r==0)
+seq=3
+}
+if (seq==1){
+g++
+if (g==12)
+seq=2
+}
+changetext()
+}
+function starteffect(){
+if (document.all||document.getElementById)
+flash=setInterval("change()",speed)
+}
+starteffect()
+</script><span id="highlight" style="color: #c8f000;"></span> </b></span>
+</p></center>
+  
+        <br><div align="center"><p><strong><font color="white">Cyber Soldiers Team Hacked Your Site.</strong></font></p></div>
+    <br>
+    
+
+    <br><div align="center"><p><strong> <font color="white"> Salam dari Indonesia.!</strong></font></p></div>
+    <br> 
+ 
+    <br>
+    <center><p><br><br> <strong> <font color="yellow">Owned By GoDZill4</font></p></center>
+     
+    <br> <center><p><strong> <font color="red"><b> PROOFSTRIKERINDO - Çꪖƙꪑꪖ★ |Hack3r -  B.Pzonk - Oberey - DarkWalker - Reelz - Dheray</b></strong></font></center></p>
+</body>
+</html> 
+ </html>

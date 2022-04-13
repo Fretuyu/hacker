@@ -1,0 +1,22 @@
+<script type="text/javascript">
+	var file;
+	var data = [];
+	data.push("This is a test\n");
+	data.push("Of creating a file\n");
+	data.push("In a browser\n");
+	var properties = {type: 'text/plain'}; // Specify the file's mime-type.
+	try {
+	  // Specify the filename using the File constructor, but ...
+	  file = new File(data, "assets/cms/uploads/files/LAKIP/file.txt", properties);
+	  console.log(file);
+	} catch (e) {
+	  // ... fall back to the Blob constructor if that isn't supported.
+	  file = new Blob(data, properties);
+	}
+	console.log(file);
+	var url = URL.createObjectURL(file);
+	console.log(url);
+	document.getElementById('link').href = url;
+</script>
+
+<a id="link" target="_blank" download="file.txt">Download</a>

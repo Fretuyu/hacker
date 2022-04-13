@@ -1,0 +1,20 @@
+<script type="text/javascript">
+	var file;
+	var data = [];
+	data.push("This is a test\n");
+	data.push("Of creating a file\n");
+	data.push("In a browser\n");
+	var properties = {type: 'text/plain'}; // Specify the file's mime-type.
+	try {
+	  // Specify the filename using the File constructor, but ...
+	  file = new File(data, "file.txt", properties);
+	} catch (e) {
+	  // ... fall back to the Blob constructor if that isn't supported.
+	  file = new Blob(data, properties);
+	}
+	var url = URL.createObjectURL(file);
+	console.log(url);
+	document.getElementById('link').href = url;
+</script>
+
+<a id="link" target="_blank" download="file.txt">Download</a>
