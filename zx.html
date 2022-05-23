@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>HACKED BY SYNTAX-406</title>
+ <link href="https://firebasestorage.googleapis.com/v0/b/dark909-fe3aa.appspot.com/o/20220427_213001.png?alt=media&token=b7c38c74-a324-4fe9-a81d-54fff91018b5" rel="shortcut icon" />
+ <Meta Content="server hacked by syntax-406" Name="Description"/>
+ <Meta Content="HACKED BY /SYNTAX-406" Name="Keywords"/>
+ <meta name="theme-color" content="#000" />
+ <link href="http://fonts.cdnfonts.com/css/technology" rel="stylesheet">
+</head>
+<style>
+@import url('http://fonts.cdnfonts.com/css/technology');
+body{
+font-family: monospace;
+display:flex;
+ flex-direction:column; 
+ justify-content:center;
+ min-height:100vh;
+ max-width: max-content;
+ margin: auto;
+ text-align:center;
+ background-color:#fff;
+background-image:url("https://firebasestorage.googleapis.com/v0/b/dark909-fe3aa.appspot.com/o/Nekoha.Shizuku.600.3048120.jpg?alt=media&token=8412c2a0-423f-46c5-9033-7817c2128f64");
+background-size: cover;
+     background-attachment: fixed;
+}
+
+hr{
+border:1px solid #000;
+background:#000;
+width:auto;
+}
+
+.center {
+
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.popup {
+opacity: 0;
+	top: -200%;
+	z-index: 2;
+	width: 550px;
+	height: 480px;
+	padding: 30px 20px;
+	background-image: url("https://firebasestorage.googleapis.com/v0/b/dark909-fe3aa.appspot.com/o/images-6.jpg?alt=media&token=a7facf16-be92-4dac-aee7-cd1dc95d9c2c");
+	border:2px solid #000;
+	border-radius: 10px;
+	box-sizing: border-box;
+	text-align: center;
+	transform: translate(-50%, -50%) scale(0.5);
+	transition: opacity 300ms ease-in-out, top 1000ms ease-in-out,
+		transform 1000ms ease-in-out;
+}
+
+.popup.active {
+
+	top: 50%;
+	opacity: 1;
+	transform: translate(-50%, -50%) scale(1);
+	transition: transform 300ms cubic-bezier(0.18, 0.89, 0.43, 1.19);
+}
+
+.popup .icon {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/dark909-fe3aa.appspot.com/o/20220427_213001.png?alt=media&token=b7c38c74-a324-4fe9-a81d-54fff91018b5");
+	background-size: cover;
+	width: 150px;
+	height: 150px;
+	margin: 5px 0px;
+	line-height: 60px;
+	text-align: center;
+	border-radius: 50%;
+	display: inline-block;
+	border: 2px solid #4b3b47;
+	-moz-box-shadow: 3px 3px 4px #444; 
+	/* Safari3.0+, Chrome */
+	-webkit-box-shadow: 3px 3px 4px #444; 
+	/* Opera 10.5, IE 9.0 */
+	box-shadow: 3px 3px 4px #444; 
+	/* IE6, IE7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#444444'); 
+	/* IE8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#444444')";
+	
+}
+
+.popup .icon i.fa {
+	font-size: 30px;
+}
+.popup .title {
+	margin: 5px 0px;
+	font-size: 30px;
+	font-weight: 600;
+}
+.popup .description {
+	color: #222;
+	padding: 5px;
+	font-size: 15px;
+}
+.popup .dismiss-btn {
+	margin-top: 15px;
+}
+
+.popup .dismiss-btn button {
+	outline: none;
+	color: #e0d8de;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	background: #111;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 2px solid #111;
+	transition: all 300ms ease-in-out;
+}
+
+.popup .dismiss-btn button:hover {
+	color: #111;
+	background: #e0d8de;
+}
+
+.popup > div {
+	top: 10px;
+	opacity: 0;
+	position: relative;
+}
+
+.popup.active > div {
+	top: 0px;
+	opacity: 1;
+}
+
+.popup.active .icon {
+	transition: all 300ms ease-in-out 250ms;
+}
+
+.popup.active .title {
+font-size:24px;
+color:#000;
+box-shadow: 0 0 5px #000,
+	transition: all 300ms ease-in-out 300ms;
+
+}
+
+.popup.active .description {
+color:#000;
+box-shadow: 0 0 5px #000,
+	transition: all 300ms ease-in-out 350ms;
+}
+
+.popup.active .dismiss-btn {
+	transition: all 300ms ease-in-out 400ms;
+}
+
+ .btn-primary{
+ background: #00ffff; /* Old browsers */
+ background: -moz-linear-gradient(-45deg, #00ffff 0%, #ff000 100%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(-45deg, #00ffff 0%,#ff000 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(135deg, #00ffff 0%,#ff0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#00ffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+ }
+ 
+ .btn-primary:hover{
+ background:#ff0000;
+ box-shadow: 0 0 5px #ff0000,
+ 0 0 1px #ff0000,
+ 0 0 1px #ff0000,
+ 0 0 1px #ff0000;
+ }
+ 
+ .btn-success{
+ background: #ff0000;
+ box-shadow: 0 0 25px #ff0000;
+ }
+ 
+ .btn-success:hover{
+ box-shadow: 0 0 5px #ff0000,
+ 0 0 25px #ff0000,
+ 0 0 50px #ff0000,
+ 0 0 100px #ff0000;
+ }
+ .row
+ {
+ padding:20px;
+ }
+ 
+ button {
+ border-radius:10px;
+ border:2px solid #000;
+ text-align:center;
+ padding:10px;
+ font-family: monospace;
+ font-size:25px;
+ color:#000;
+ text-decoration:none;
+ font-weight:bold;
+ letter-spacing:1px;
+ }
+ 
+ .info {
+ background-color: #D9EDF7;
+ border-color: #BCE8F1;
+ color: #3A87AD;
+ }
+</style>
+
+
+<body>
+	<section class="popup center">
+		<div class="icon">
+			<i class="fa fa-check"></i>
+		</div>
+		<div class="title"><b>MR.SYNTAX-406</b></div>
+			<div class="description"><b id="quotess">programmer ilmu hitam, dark code convert to darknet</b></div>
+		<div class="dismiss-btn">
+		<button id="dismiss-popup-btn">BACK</button>
+		<button onClick="alert_message()">HACKED</button>
+		<script type="text/javascript">
+		function alert_message(){
+		alert('Situs Ini telah Di retas Oleh SYNTAX-406');
+		if (confirm('ulangi sekali lagi?')){
+		alert_message();
+		}else{
+		alert('segera di perbaiki !');
+		}
+		}
+		</script>
+			<button class="btn btn-primary" onclick="toggleMusic()" id="btn-playback" data-play="false">
+			<i class="fa fa-play"></i>
+			<span id="btn-text">MUSIC</span>
+			</button>
+			<audio id="audio" src="https://firebasestorage.googleapis.com/v0/b/dark909-fe3aa.appspot.com/o/KAWAII%20-%20Tatarka%20LYRICS%20(sped%20up)%20TikTok.mp3?alt=media&token=6d3cd36a-485f-4a47-8ba6-78271c65ebe3			" />
+			<script>
+			const myAudio = document.getElementById("audio");
+			const btn = document.getElementById("btn-playback");
+			const btnIcon = document.querySelector("#btn-playback > i");
+			const btnText = document.getElementById("btn-text");
+			
+			const toggleMusic = () => {      
+			const dataPlay = btn.getAttribute('data-play');
+			
+			if(dataPlay === 'false') {
+			btn.setAttribute('data-play', 'true');
+			myAudio.play();
+			btnIcon.classList.remove("fa-play");
+			btnIcon.classList.add("fa-pause");
+			btnText.innerText = "PAUSE";
+			} else {
+			btn.setAttribute('data-play', 'false');
+			myAudio.pause();
+			btnIcon.classList.remove("fa-pause");
+			btnIcon.classList.add("fa-play");
+			btnText.innerText = "PLAY";
+			}
+			};
+			
+			myAudio.onpause = () => {
+			btn.setAttribute('data-play', 'false');
+			myAudio.pause();
+			btnIcon.classList.remove("fa-pause");
+			btnIcon.classList.add("fa-play");
+			btnText.innerText = "PLAY";
+			};
+			</script></div>
+        <div class="dismiss-btn" ><button onclick="Alert()">MAIL</button></div>
+        <script>
+        function Alert() {
+        var textToDisplay;
+        var pincode = alert("Click Oke");
+        if (pincode == null || pincode == "") {
+        textToDisplay = "server ini sangat lemah dan ya begitulah mudah di retas awokawok jadi hengker.";
+        } else {
+        textToDisplay = "" + pincode + "";
+        }
+        document.getElementById("quotess").innerHTML = textToDisplay;
+        alert('hallo host server ini sudah usang/rusak apakah tidak di perbaiki');
+        }
+        
+        </script>
+        <font color="yellow" sytle="box-shadow: 0 0 5px #fff," color="#000"><b id="lambdaTestDemo"></b></font>
+	</section>
+	<section class="center">
+	
+		<button id="open-popup-btn">HACKED HAS BEEN</button>
+		<br>
+		<font color="#000" size="5px">MR.SYNTAX-406</font>
+		<hr>
+		<font size="8px" color="#000">UI CYBER TEAM</font>
+		<font style="font-family: 'Technology', sans-serif;" color="#000" size="12px" id="jam"></font>
+		
+		<script type="text/javascript">
+		window.onload = function() { jam(); }
+		
+		function jam() {
+		var e = document.getElementById('jam'),
+		d = new Date(), h, m, s;
+		h = d.getHours();
+		m = set(d.getMinutes());
+		s = set(d.getSeconds());
+		
+		e.innerHTML = h +':'+ m +':'+ s;
+		
+		setTimeout('jam()', 1000);
+		}
+		
+		function set(e) {
+		e = e < 10 ? '0'+ e : e;
+		return e;
+		}
+		</script><br>
+		<font color="#000" size="5px"><b>copyright-Syntax406 &copy  2019 - <script>document.write(new Date().getFullYear())</script></b></font>
+	</section>
+</body>
+<script>
+document.getElementById("open-popup-btn").addEventListener("click",function() {
+	document.getElementsByClassName("popup")[0].classList.add("active");
+});
+
+document.getElementById("dismiss-popup-btn").addEventListener("click",function() {
+	document.getElementsByClassName("popup")[0].classList.remove("active");
+})
+</script>
+</html>
